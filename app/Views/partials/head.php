@@ -15,7 +15,7 @@
         <nav class="navbar bg-body-tertiary">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">
-                    <img src="/public/img/Goalify-removebg-preview.png" alt="Logo" width="100" class="d-inline-block align-text-top">
+                    <img src="/public/img/Goalify__1_-removebg-preview.png" alt="Logo" width="100" class="d-inline-block align-text-top">
                     Goalify
                 </a>
             </div>
