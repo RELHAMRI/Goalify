@@ -1,5 +1,7 @@
+
 <footer>
-    <p><?= date('Y') ?> EL HAMRI Radouane</p>  
+    <p>&copy; 2024 Goalify - Votre source pour les actus football</p>
+    <p><a href="contact.php">Contactez-nous</a></p>
 </footer>
 
 </body>

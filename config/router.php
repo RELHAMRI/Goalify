@@ -1,5 +1,6 @@
 <?php
-
+require_once (__DIR__ . '/db.php');
+require_once (__DIR__ . '/function.php');
 // Récupération de l'URI actuelle de la requête utilisateur
 // Cette partie extrait uniquement le chemin de l'URL (sans les paramètres GET ou les fragments)
 $uri = parse_url($_SERVER['REQUEST_URI'])['path'];
@@ -10,7 +11,9 @@ $uri = parse_url($_SERVER['REQUEST_URI'])['path'];
 
     $routes = [
         '/' => 'HomeController.php',
-        '/register' => 'RegisterController.php'
+        '/register' => 'RegisterController.php',
+        '/connexion' => 'ConnexionController.php',
+        '/logout' => 'LogoutController.php'
     ];
 
 // Vérification de l'existance de la route dans le tableau des routes
