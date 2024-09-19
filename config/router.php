@@ -13,7 +13,8 @@ $uri = parse_url($_SERVER['REQUEST_URI'])['path'];
         '/' => 'HomeController.php',
         '/register' => 'RegisterController.php',
         '/connexion' => 'ConnexionController.php',
-        '/logout' => 'LogoutController.php'
+        '/logout' => 'LogoutController.php',
+        '/users' => 'UsersController.php',
     ];
 
 // Vérification de l'existance de la route dans le tableau des routes
