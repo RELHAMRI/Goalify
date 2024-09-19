@@ -9,7 +9,8 @@ $uri = parse_url($_SERVER['REQUEST_URI'])['path'];
 // Le chemin dans l'URL (comme '/') est relié au contrôleur correspondnat 'comme 'HomeController.php')
 
     $routes = [
-        '/' => 'HomeController.php'
+        '/' => 'HomeController.php',
+        '/register' => 'RegisterController.php'
     ];
 
 // Vérification de l'existance de la route dans le tableau des routes
