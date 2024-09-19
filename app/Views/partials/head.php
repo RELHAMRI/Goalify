@@ -18,11 +18,10 @@
         <nav>
             <ul>
                 <li><a href="/">Accueil</a></li>
-                <li><a href="#">Actualités</a></li>
-                <li><a href="#">Calendrier</a></li>
                 <li><a href="/connexion">Connexion</a></li>
                 <li><a href="/register">Inscription</a></li>
                 <li><a href="/logout">Deconnexion</a></li>
+                <li><a href="/users">Liste des utilisateurs</a></li>
             </ul>
         </nav>
     </header>
