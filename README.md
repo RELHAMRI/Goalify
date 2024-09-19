@@ -69,3 +69,17 @@ Maintenance : 1 000 € annuels pour la maintenance et les mises à jour.
 
 Le forum de football sera un espace moderne et minimaliste, conçu pour répondre aux attentes des utilisateurs en matière de simplicité et d'efficacité. 
 Grâce à une interface légère et épurée, l’expérience sera fluide et agréable, tout en restant visuellement attractive et fonctionnelle.
+
+-Faire un joli formulaire
+-Changer le tableau d'erreurs en clé => valeur
+La clé doit être le nom du champ la valeur le texte
+-Afficher dans votre formulaire l'erreur sous le bon champ
+Exemple :
+<label for="mail">E-mail</label>
+<input type="email" name="mail" id="mail">
+    <?php if(isset($arrayError['mail'])){
+    ?
+        <p class='text-danger'><?= $arrayError['mail'] ?></p>
+        <?php
+    }    ?>
+    
