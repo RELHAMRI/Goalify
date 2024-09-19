@@ -12,12 +12,17 @@
 
 <body>
     <header>
-        <nav class="navbar bg-body-tertiary">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">
-                    <img src="/public/img/Goalify__1_-removebg-preview.png" alt="Logo" width="100" class="d-inline-block align-text-top">
-                    Goalify
-                </a>
-            </div>
+        <div class="logo">
+            <img src="/public/img/Goalify__1_-removebg-preview.png" alt="Logo Goalify" width="100" height="100">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="/">Accueil</a></li>
+                <li><a href="#">Actualités</a></li>
+                <li><a href="#">Calendrier</a></li>
+                <li><a href="/connexion">Connexion</a></li>
+                <li><a href="/register">Inscription</a></li>
+                <li><a href="/logout">Deconnexion</a></li>
+            </ul>
         </nav>
     </header>

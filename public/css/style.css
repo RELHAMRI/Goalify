@@ -1,15 +1,77 @@
 * {
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
-footer {
-    text-align: center;
-    background-color: rgb(65, 82, 94);
-    height: 60px;
-    font-size: 40px;
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #fff;
 }
+
+header {
+    background-color: #004170; /* Bleu PSG */
+    color: white;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo img {
+    max-width: 100px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+nav ul li a:hover {
+    color: #DA291C; /* Rouge PSG */
+}
+
+main {
+    padding: 20px;
+    background-color: #002244; /* Bleu foncé */
+}
+
+h2 {
+    font-size: 2em;
+    color: #DA291C; /* Rouge PSG */
+}
+
+
+footer {
+    background-color: #004170; /* Bleu PSG */
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 20px;
+}
+
+footer a {
+    color: #DA291C; /* Rouge PSG */
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+
 
 .bg {
 background: url('/public/img/vienna-reyes-Zs_o1IjVPt4-unsplash.jpg') center/cover;
@@ -21,4 +83,9 @@ font-size: 40px;
 }
 
 .bg a {text-decoration: none;}
+
+.myBody {
+    margin: 0 auto;
+    padding-top: 100vh;
+}
     
