@@ -8,8 +8,7 @@ if(isset($_POST['title'])){
         $title = htmlspecialchars($_POST['title']);
         $description = htmlspecialchars($_POST['description']);
         $creation_date = date('Y-m-d');
-        $userId = $_SESSION['user']['idUser'];
-        
+        $userId = $_SESSION['user']['idUser'];       
         $query = 'INSERT INTO `subject` (`title`, `description`, `creation_date`, `id_user`)
                VALUES (:title, :description, :creation_date, :id_user)';
         $queryStatement = $mysqlClient->prepare($query);
