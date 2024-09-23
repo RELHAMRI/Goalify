@@ -10,4 +10,4 @@ if(isset($_GET['id'])){
     $queryStatement->execute();
     $articles = $queryStatement->fetchAll();
 }
-require_once ( __DIR__ . '/../Views/article/allArticles.view.php');
+require_once ( __DIR__ . '/../Views/article/allArticles.views.php');
