@@ -1,5 +1,4 @@
 <?php
-
 function isNotEmpty($value) {
     global $arrayError;
     if(empty($_POST[$value])){
@@ -8,12 +7,10 @@ function isNotEmpty($value) {
     }
     return false;
 }
-
 function checkFormat($nameInput, $value){
     global $arrayError;
     $regexName = '/^[a-zA-Zà-üÀ-Ü -]{2,255}$/';
     $regexPassword = '/^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{8,}$/';
-
     switch ($nameInput) {
         case 'pseudo':
             if(!preg_match($regexName, $value)){
@@ -32,11 +29,9 @@ function checkFormat($nameInput, $value){
         break;
     }
 }
-
 function check($nameInput, $value){
-
     isNotEmpty($nameInput);
     $value = htmlspecialchars($value);
     checkFormat($nameInput, $value);
-
 }
+
