@@ -11,7 +11,8 @@ function checkFormat($nameInput, $value){
     global $arrayError;
     $regexName = '/^[a-zA-Zà-üÀ-Ü -]{2,255}$/';
     $regexPassword = '/^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{8,}$/';
-    $regexTitle = '';
+    $regexTitle = '/^[a-zA-Zà-üÀ-Ü0-9 #?!@$%^,.;&*-]{4,255}$/';
+    $regexContent = '/^[a-zA-Zà-üÀ-Ü0-9 #?!@$%^,.;&*-]{4,}$/';
         switch ($nameInput) {
         case 'pseudo':
             if(!preg_match($regexName, $value)){

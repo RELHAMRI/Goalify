@@ -15,11 +15,6 @@
                     <h2><?= $subject['title'] ?></h2>
                     <p class="fst-italic"><?= $subject['creation_date'] ?></p>
                 </div>
-
-            <div class="card-body">
-                <p class="card-text"><?= $subject['description'] ?></p>
-                <a href="#" class="btn btn-info">Aller voir le sujet</a>
-            </div>
                 <div class="card-body">
                     <p class="card-text"><?= $subject['description'] ?></p>
                     <a href="/articles?id=<?= $subject['id'] ?>" class="btn colorPink">Aller voir le sujet</a>
