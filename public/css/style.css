@@ -7,7 +7,7 @@
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
-    color: #fff;
+    color: #000000;
 }
 
 header {
@@ -41,6 +41,11 @@ nav ul li a {
 
 nav ul li a:hover {
     color: #DA291C; /* Rouge PSG */
+}
+
+.bg-football {
+    background: url('/public/img/vienna-reyes-Zs_o1IjVPt4-unsplash.jpg') center/cover;
+    height: 100vh;
 }
 
 main {

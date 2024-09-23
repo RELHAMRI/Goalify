@@ -25,10 +25,10 @@ if (isset($_POST['mail'])) {
             // Dans la variable $verif on aura TRUE/FALSE
             $verif = password_verify($password, $user['password']);
             if (!$verif) {
-                redirectToRoute('/connexion');
+                redirectToRoute('/connection');
             } else {
 
-                $userQuery = "SELECT `user`.`id`, `user`.`pseudo`, `user`.`mail`, `user`.`id_role`
+                $userQuery = "SELECT `user`.`id`, `user`.`pseudo`, `user`.`mail`, `user`.`id_role`, `role`.`name`
                 FROM `user`
                 INNER JOIN `role` ON `user`.`id_role` = `role`.`id`
                 WHERE mail = :mail";
@@ -43,7 +43,7 @@ if (isset($_POST['mail'])) {
                     'mail' => $user['mail'],
                     'pseudo' => $user['pseudo'],
                     'register_date' => $user['register_date'],
-                    'rôle' => $user['name'],
+                    'role' => $user['name'],
                     'idUser' => $user['id']
                 ];
 

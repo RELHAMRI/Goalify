@@ -17,11 +17,25 @@
         </div>
         <nav>
             <ul>
-                <li><a href="/">Accueil</a></li>
-                <li><a href="/connexion">Connexion</a></li>
-                <li><a href="/register">Inscription</a></li>
-                <li><a href="/logout">Deconnexion</a></li>
-                <li><a href="/users">Liste des utilisateurs</a></li>
+                <?php
+                if (isset($_SESSION['user'])) {
+                ?>
+                    <li><a href="/logout">Deconnexion</a></li>
+                    <?php
+                    if ($_SESSION['user']['role'] == "Admin") {
+                    ?>
+                        <li><a href="/users">Liste des utilisateurs</a></li>
+                        <li><a href="/subject">Ajout d'un sujet</a></li>
+                    <?php
+                    }
+                } else {
+                    ?>
+                    <li><a href="/register">Inscription</a></li>
+                    <li><a href="/connection">Connexion</a></li>
+                <?php
+                }
+                ?>
             </ul>
         </nav>
     </header>
+    <div class="bg-football">
